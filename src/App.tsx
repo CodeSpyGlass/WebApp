@@ -6,7 +6,7 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            <header className="App-header" style={{backgroundColor: '#b3e5fc'}}>
+            <header className="App-header" style={{backgroundColor: 'white'}}>
                 <img src={spyglass} alt="logo"/>
                 <p>Enter a GitHub repository URL</p>
                 <Input color="primary" type="text" value="https://www.github.com/robmoore-i/LSystems"/>
