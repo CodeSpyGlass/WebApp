@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import spyglass from './spyglass.png'
+import {Button, Input} from '@material-ui/core'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header" style={{backgroundColor: '#b3e5fc'}}>
+                <img src={spyglass} alt="logo"/>
+                <p>Enter a GitHub repository URL</p>
+                <Input color="primary" type="text" value="https://www.github.com/robmoore-i/LSystems"/>
+                <br/>
+                <Button color="primary" size="large" variant="contained">Analyse</Button>
+            </header>
+        </div>
+    );
 }
 
 export default App;
