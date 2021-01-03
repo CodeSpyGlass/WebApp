@@ -7,7 +7,10 @@ interface AnalysisProps {
 function Analysis(props: AnalysisProps) {
     if (props.triggered) {
         return (
-            <div>Fetching code</div>
+            <div className="Analysis">
+                <br/>
+                <span>Fetching code</span>
+            </div>
         );
     } else {
         return <div/>
