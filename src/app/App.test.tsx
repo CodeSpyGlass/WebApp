@@ -2,7 +2,7 @@ import React from 'react';
 import {render, screen} from '@testing-library/react';
 import App from './App';
 
-test("doesn't renders analysis steps before pressing 'Analyse' button", () => {
+test("doesn't render analysis steps before pressing 'Analyse' button", () => {
     render(<App/>);
     const githubCloneStepText = screen.queryByText("Fetching code")
     expect(githubCloneStepText).toBeNull()
