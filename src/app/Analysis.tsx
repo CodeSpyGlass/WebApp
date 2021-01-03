@@ -4,7 +4,7 @@ import {GridLoader as Loader} from 'react-spinners';
 import './Analysis.css'
 
 interface AnalysisProps {
-    triggered: boolean
+    triggered: boolean;
 }
 
 function Analysis(props: AnalysisProps) {
@@ -23,7 +23,7 @@ function Analysis(props: AnalysisProps) {
             </div>
         );
     } else {
-        return <div/>
+        return <div/>;
     }
 }
 
