@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Input} from '@material-ui/core'
 import spyglass from './spyglass.png'
-import AnalysisLoaders from './AnalysisLoaders'
+import AnalysisLoaders from './analysisloaders/AnalysisLoaders'
 import './App.css';
 import {useTrigger} from "./useTrigger";
 
