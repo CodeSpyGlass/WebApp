@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Input} from '@material-ui/core'
 import spyglass from './spyglass.png'
-import Analysis from './Analysis'
+import AnalysisLoaders from './AnalysisLoaders'
 import './App.css';
 import {useTrigger} from "./useTrigger";
 
@@ -19,7 +19,7 @@ function App() {
                         onClick={triggerAnalysis}>
                     Analyse
                 </Button>
-                <Analysis triggered={analysisTriggered}/>
+                <AnalysisLoaders triggered={analysisTriggered}/>
             </header>
         </div>
     );
