@@ -5,9 +5,16 @@ import AnalysisLoaders from './analysisloaders/AnalysisLoaders'
 import './App.css';
 import {useTrigger} from "./useTrigger";
 
+function analysisLoaders(analysisTriggered: boolean): JSX.Element {
+    if (analysisTriggered) {
+        return <AnalysisLoaders/>;
+    } else {
+        return <div/>;
+    }
+}
+
 function App() {
     let [analysisTriggered, triggerAnalysis] = useTrigger();
-
     return (
         <div className="App">
             <header className="App-header" style={{backgroundColor: 'white'}}>
@@ -19,7 +26,7 @@ function App() {
                         onClick={triggerAnalysis}>
                     Analyse
                 </Button>
-                <AnalysisLoaders triggered={analysisTriggered}/>
+                {analysisLoaders(analysisTriggered)}
             </header>
         </div>
     );
